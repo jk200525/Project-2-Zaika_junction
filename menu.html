@@ -9,40 +9,307 @@
         padding: 2rem;
         text-align: center;
       }
-
-      .menu-items {
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-      }
-
-      .menu-item {
-        border: 1px solid #ccc;
-        padding: 1rem;
-        border-radius: 5px;
-        background-color: #fff;
-      }
     </style>
     <script defer src="script.js"></script>
   </head>
   <body>
     <header><h1>MENU</h1></header>
     <section id="menu">
-      <div class="menu-items">
-        <div class="menu-item">
-          <h3>Grilled Salmon</h3>
-          <p>$25.00</p>
-          <button onclick="orderItem('Grilled Salmon', 25)">Order</button>
+      <h2>Our 100% Veg Menu</h2>
+      <div class="menu-category">
+        <h3>Starters</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <h4>Veg Spring Rolls</h4>
+            <p>₹120</p>
+            <button onclick="orderItem('Veg Spring Rolls', 120)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Paneer Tikka</h4>
+            <p>₹180</p>
+            <button onclick="orderItem('Paneer Tikka', 180)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Pani Puri Shots</h4>
+            <p>₹80</p>
+            <button onclick="orderItem('Pani Puri Shots', 80)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Dahi Bhalla Papdi Chaat</h4>
+            <p>₹120</p>
+            <button onclick="orderItem('Dahi Bhalla Papdi Chaat', 120)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Veg Seekh Kebab</h4>
+            <p>₹160</p>
+            <button onclick="orderItem('Veg Seekh Kebab', 160)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Hara Bhara Kebab</h4>
+            <p>₹140</p>
+            <button onclick="orderItem('Hara Bhara Kebab', 140)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Corn Cheese Balls</h4>
+            <p>₹150</p>
+            <button onclick="orderItem('Corn Cheese Balls', 150)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Stuffed Mushroom Tandoori</h4>
+            <p>₹170</p>
+            <button onclick="orderItem('Stuffed Mushroom Tandoori', 170)">Order</button>
+          </div>
         </div>
-        <div class="menu-item">
-          <h3>Steak Au Poivre</h3>
-          <p>$30.00</p>
-          <button onclick="orderItem('Steak Au Poivre', 30)">Order</button>
+      </div>
+      <div class="menu-category">
+        <h3>Soups</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <h4>Tamatar Dhaniya Shorba</h4>
+            <p>₹90</p>
+            <button onclick="orderItem('Tamatar Dhaniya Shorba', 90)">
+              Order
+            </button>
+          </div>
+          <div class="menu-item">
+            <h4>Sweet Corn Veg Soup</h4>
+            <p>₹100</p>
+            <button onclick="orderItem('Sweet Corn Veg Soup', 100)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Manchow Soup</h4>
+            <p>₹100</p>
+            <button onclick="orderItem('Manchow Soup', 100)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Cream of Mushroom Soup</h4>
+            <p>₹110</p>
+            <button onclick="orderItem('Cream of Mushroom Soup', 110)">Order</button>
+          </div>
         </div>
-        <div class="menu-item">
-          <h3>Chocolate Lava Cake</h3>
-          <p>$10.00</p>
-          <button onclick="orderItem('Chocolate Lava Cake', 10)">Order</button>
+      </div>
+      <div class="menu-category">
+        <h3>Main Course</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <h4>Paneer Butter Masala</h4>
+            <p>₹220</p>
+            <button onclick="orderItem('Paneer Butter Masala', 220)">
+              Order
+            </button>
+          </div>
+          <div class="menu-item">
+            <h4>Kadhai Paneer</h4>
+            <p>₹210</p>
+            <button onclick="orderItem('Kadhai Paneer', 210)">
+              Order
+            </button>
+          </div>
+          <div class="menu-item">
+            <h4>Dal Makhani</h4>
+            <p>₹160</p>
+            <button onclick="orderItem('Dal Makhani', 160)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Malai Kofta</h4>
+            <p>₹200</p>
+            <button onclick="orderItem('Malai Kofta', 200)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Veg Jaipuri</h4>
+            <p>₹180</p>
+            <button onclick="orderItem('Veg Jaipuri', 180)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Chole Masala</h4>
+            <p>₹150</p>
+            <button onclick="orderItem('Chole Masala', 150)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Amritsari Kulcha with Chole</h4>
+            <p>₹140</p>
+            <button onclick="orderItem('Amritsari Kulcha with Chole', 140)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Rajma Masala</h4>
+            <p>₹150</p>
+            <button onclick="orderItem('Rajma Masala', 150)">Order</button>
+          </div>
+        </div>
+      </div>
+      <div class="menu-category">
+        <h3>Rice & Biryani</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <h4>Veg Biryani with Raita</h4>
+            <p>₹180</p>
+            <button onclick="orderItem('Veg Biryani with Raita', 180)">
+              Order
+            </button>
+          </div>
+          <div class="menu-item">
+            <h4>Paneer Pulao</h4>
+            <p>₹170</p>
+            <button onclick="orderItem('Paneer Pulao', 170)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Jeera Rice</h4>
+            <p>₹100</p>
+            <button onclick="orderItem('Jeera Rice', 100)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Saffron Veg Pulao</h4>
+            <p>₹160</p>
+            <button onclick="orderItem('Saffron Veg Pulao', 160)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Steamed Basmati Rice</h4>
+            <p>₹90</p>
+            <button onclick="orderItem('Steamed Basmati Rice', 90)">Order</button>
+          </div>
+        </div>
+      </div>
+      <div class="menu-category">
+        <h3>Indian Breads</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <h4>Butter Naan</h4>
+            <p>₹40</p>
+            <button onclick="orderItem('Butter Naan', 40)">
+              Order
+            </button>
+          </div>
+          <div class="menu-item">
+            <h4>Garlic Naan</h4>
+            <p>₹50</p>
+            <button onclick="orderItem('Garlic Naan', 50)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Tandoori Roti</h4>
+            <p>₹30</p>
+            <button onclick="orderItem('Tandoori Roti', 30)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Missi Roti</h4>
+            <p>₹35</p>
+            <button onclick="orderItem('Missi Roti', 35)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Stuffed Prantha (Aloo/Paneer/Gobi)</h4>
+            <p>₹60</p>
+            <button onclick="orderItem('Stuffed Prantha (Aloo/Paneer/Gobi)', 60)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Lachha Prantha</h4>
+            <p>₹50</p>
+            <button onclick="orderItem('Lachha Prantha', 50)">Order</button>
+          </div>
+        </div>
+        <div class="menu-category">
+        <h3>Street Style & Fusion</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <h4>Bombay Veg Sandwich</h4>
+            <p>₹90</p>
+            <button onclick="orderItem('Bombay Veg Sandwich', 90)">
+              Order
+            </button>
+          </div>
+          <div class="menu-item">
+            <h4>Masala Dosa with Chutney</h4>
+            <p>₹100</p>
+            <button onclick="orderItem('Masala Dosa with Chutney', 100)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Pav Bhaji</h4>
+            <p>₹120</p>
+            <button onclick="orderItem('Pav Bhaji', 120)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Veg Momos (Steamed/Fried)</h4>
+            <p>₹100</p>
+            <button onclick="orderItem('Veg Momos (Steamed/Fried)', 100)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Tandoori Pizza (Paneer/Veggie)</h4>
+            <p>₹150</p>
+            <button onclick="orderItem('Tandoori Pizza (Paneer/Veggie)', 150)">Order</button>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="menu-category">
+        <h3>Desserts</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <h4>Gulab Jamun (2 pcs)</h4>
+            <p>₹60</p>
+            <button onclick="orderItem('Gulab Jamun (2 pcs)', 60)">
+              Order
+            </button>
+          </div>
+          <div class="menu-item">
+            <h4>Rasmalai</h4>
+            <p>₹80</p>
+            <button onclick="orderItem('Rasmalai', 80)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Kesar Phirni</h4>
+            <p>₹80</p>
+            <button onclick="orderItem('Kesar Phirni', 80)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Gajar Halwa</h4>
+            <p>₹70</p>
+            <button onclick="orderItem('Gajar Halwa', 70)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Rabri Jalebi</h4>
+            <p>₹110</p>
+            <button onclick="orderItem('Rabri Jalebi', 110)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Kulfi Falooda</h4>
+            <p>₹100</p>
+            <button onclick="orderItem('Kulfi Falooda', 100)">Order</button>
+          </div>
+        </div>
+      </div>
+      <div class="menu-category">
+        <h3>Beverages</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <h4>Masala Chai</h4>
+            <p>₹30</p>
+            <button onclick="orderItem('Masala Chai', 30)">
+              Order
+            </button>
+          </div>
+          <div class="menu-item">
+            <h4>Rose Lassi/Mango Lassi</h4>
+            <p>₹60</p>
+            <button onclick="orderItem('Rose Lassi/Mango Lassi', 60)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Fresh Lime Soda</h4>
+            <p>₹30</p>
+            <button onclick="orderItem('Fresh Lime Soda', 30)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Jaljeera</h4>
+            <p>₹30</p>
+            <button onclick="orderItem('Jaljeera', 30)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Cold Coffee</h4>
+            <p>₹70</p>
+            <button onclick="orderItem('Cold Coffee', 70)">Order</button>
+          </div>
+          <div class="menu-item">
+            <h4>Thandai</h4>
+            <p>₹80</p>
+            <button onclick="orderItem('Thandai', 80)">Order</button>
+          </div>
         </div>
       </div>
     </section>
@@ -50,7 +317,7 @@
       <h2>Your Order Summary</h2>
       <ul id="orderList"></ul>
       <p>
-        <strong>Total: $<span id="totalAmount">0</span></strong>
+        <strong>Total: ₹<span id="totalAmount">0</span></strong>
       </p>
     </section>
     <main>
@@ -59,7 +326,7 @@
       <a class="btn" href="takeaway.html">Takeaway</a>
       <a class="btn" href="delivery.html">Delivery</a>
     </main>
-    <section style="height: 30px;"></section>
+    <section style="height: 30px"></section>
     <footer>&copy; 2025 Zaika Junction</footer>
   </body>
 </html>
