@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment - Zaika Junction</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header><h1>PAYMENT</h1></header>
+  <main>
+    <p>Scan the QR code to pay:</p>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?data=ZaikaJunctionPayment&size=200x200" alt="QR Code">
+    <br><br>
+    <button onclick="showOrderStatus()">Payment Done</button>
+
+    <div id="statusSection" style="display:none;">
+      <h3>✅ Order Placed!</h3>
+      <p id="orderStatus">Getting things ready...</p>
+    </div>
+  </main>
+  <footer>&copy; 2025 Zaika Junction</footer>
+</body>
+</html>
