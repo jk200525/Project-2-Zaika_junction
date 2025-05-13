@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Menu - Zaika Junction</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      section {
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .menu-items {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+      }
+
+      .menu-item {
+        border: 1px solid #ccc;
+        padding: 1rem;
+        border-radius: 5px;
+        background-color: #fff;
+      }
+    </style>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header><h1>MENU</h1></header>
+    <section id="menu">
+      <div class="menu-items">
+        <div class="menu-item">
+          <h3>Grilled Salmon</h3>
+          <p>$25.00</p>
+          <button onclick="orderItem('Grilled Salmon', 25)">Order</button>
+        </div>
+        <div class="menu-item">
+          <h3>Steak Au Poivre</h3>
+          <p>$30.00</p>
+          <button onclick="orderItem('Steak Au Poivre', 30)">Order</button>
+        </div>
+        <div class="menu-item">
+          <h3>Chocolate Lava Cake</h3>
+          <p>$10.00</p>
+          <button onclick="orderItem('Chocolate Lava Cake', 10)">Order</button>
+        </div>
+      </div>
+    </section>
+    <section id="order-summary">
+      <h2>Your Order Summary</h2>
+      <ul id="orderList"></ul>
+      <p>
+        <strong>Total: $<span id="totalAmount">0</span></strong>
+      </p>
+    </section>
+    <main>
+      <h2>Choose Your Dining Option</h2>
+      <a class="btn" href="dine_in.html">Dine-In</a>
+      <a class="btn" href="takeaway.html">Takeaway</a>
+      <a class="btn" href="delivery.html">Delivery</a>
+    </main>
+    <section style="height: 30px;"></section>
+    <footer>&copy; 2025 Zaika Junction</footer>
+  </body>
+</html>
